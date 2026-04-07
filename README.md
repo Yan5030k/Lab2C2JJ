@@ -20,13 +20,18 @@ o	Las cookies sirven para recordar preferencias pequeñas del usuario en su prop
 
 4. Descripción de tablas y tipos de datos
 Para este laboratorio se utilizaron dos tablas principales:
-Tabla: usuarios
-Campo	Tipo de Dato	Justificación
-id	INT AUTO_INCREMENT	Un número entero único que se genera solo para identificar a cada usuario sin errores.
-username	VARCHAR(50)	Cadena de texto de longitud variable; es ideal para nombres de usuario porque ahorra espacio si el nombre es corto.
-password	VARCHAR(255)	Texto largo para almacenar la clave. Se usa esta longitud por si en el futuro se decide encriptar la contraseña.
-Tabla: registros
-Campo	Tipo de Dato	Justificación
-id	INT AUTO_INCREMENT	Llave primaria para llevar el orden correlativo de los datos ingresados.
-nombre_item	VARCHAR(100)	Almacena el nombre del objeto o dato; 100 caracteres es suficiente para la mayoría de nombres.
-descripcion	TEXT	Se eligió TEXT en lugar de VARCHAR porque permite descripciones mucho más largas y detalladas sin un límite tan estricto.
+Tabla Usuarios:
+
+| Campo    | Tipo de Dato       | Justificación                                                                                                    |
+| -------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| id       | INT AUTO_INCREMENT | Número entero único que se genera automáticamente para identificar a cada usuario sin errores.                   |
+| username | VARCHAR(50)        | Cadena de texto de longitud variable; ideal para nombres de usuario porque ahorra espacio si el nombre es corto. |
+| password | VARCHAR(255)       | Texto largo para almacenar la clave. Se usa esta longitud por si en el futuro se decide encriptar la contraseña. |
+
+Tabla Registros:
+| Campo       | Tipo de Dato       | Justificación                                                                                                       |
+| ----------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| id          | INT AUTO_INCREMENT | Llave primaria para llevar el orden correlativo de los datos ingresados.                                            |
+| nombre_item | VARCHAR(100)       | Almacena el nombre del objeto o dato; 100 caracteres es suficiente para la mayoría de nombres.                      |
+| descripcion | TEXT               | Se eligió TEXT en lugar de VARCHAR porque permite descripciones más largas y detalladas sin un límite tan estricto. |
+
